@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Dice Game!</title>
+			<link rel="stylesheet" href="css/main.css">
+			<script src="javascript/main.js"></script>
+		</head>
+		
+		<body>
+
+			<a href="home.html"><h1>Dice Game!</h1></a>
+
+			<div class="game">
+
+				<div class="esito" id="esito"></div>
+
+				<p class="player_tag">CPU</p>
+				<div class="points" id="pointsCPU"></div>
+
+				<div class="dice_board" id="dadiCPU"></div>
+
+
+				<div class="dice_board" id="dadiPlayer"></div>
+
+				<div class="points" id="pointsPlayer"></div>
+				<p class="player_tag" id="nickname"></p>
+
+				
+				<div class="game_button" onclick="tiraDadi()">Lancia i dadi!</div>
+			</div>
+			
+			<script>
+				
+				let puntiPlayer = 0;
+				let puntiCPU = 0;
+
+				document.getElementById("pointsCPU").innerHTML = 0;
+				document.getElementById("pointsPlayer").innerHTML = 0;
+
+				while (true) {
+					var nickname = prompt("Inserisci il tuo nickname");
+					document.getElementById("nickname").innerHTML = nickname;
+
+					if (nickname == "") {
+						alert('Nickname non valido');
+					}
+					else {
+						break;
+					}
+				}
+
+				while (true) {
+					var limite = prompt("Inserisci il punteggio massimo");
+
+					if (limite <= 0 || isNaN(limite)) {
+						alert('Punteggio non valido');
+					}
+					else {
+						break;
+					}
+				}
+				
+			</script>
+			
+		</body>
+	</html>

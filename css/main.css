@@ -1,0 +1,122 @@
+body {
+	background-color: black;
+}
+
+* {
+	font-family: sans-serif;
+	color: white;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 50px;
+}
+
+h2 {
+	padding-top: 50px;
+	text-decoration: underline;
+}
+
+h5 {
+	text-align: center;
+}
+
+
+
+.container {
+	justify-content: center;
+	display: flex;
+}
+
+.center {
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+img {
+	width: 150px;
+    height: 150px;
+}
+
+.button {
+	background-color: white;
+	border-radius: 12px;
+	color: black;
+	font-weight: bold;
+	padding: 15px 32px;
+	margin-top: 30px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.game_button {
+	background-color: white;
+	border-radius: 12px;
+	color: black;
+	font-weight: bold;
+	padding: 15px 32px;
+	margin-top: 30px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	margin-left: auto;
+	margin-right: auto;
+	cursor: pointer;
+	width: 150px;
+}
+
+.button:hover {
+	background-color: rgb(206, 206, 206);
+}
+
+.player_tag {
+	font-weight: bold;
+	background-color: white;
+	border-radius: 25px;
+	color: black;
+	text-align: center;
+	font-size: x-large;
+	width: 450px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.dice_board {
+	width: 450px;
+	height: 150px;
+	justify-content: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.esito {
+	width: 450px;
+	height: 37px;
+	margin-bottom: 50px;
+	text-align: center;
+	font-size: xx-large;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.points {
+	font-weight: bold;
+	background-color: white;
+	border-radius: 25px;
+	color: black;
+	text-align: center;
+	font-size: xx-large;
+	width: 450px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.game {
+	margin-top: 10%;
+	justify-content: center;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Dice Game!</title>
+			<link rel="stylesheet" href="css/main.css">
+			<link rel="icon" type="image/x-icon" href="img/diceicon.png">
+		</head>
+		
+		<body>
+			
+			<div class="center">
+				<h1>Dice Game!</h1>
+				<h5>Un semplice gioco coi dadi</h5>
+				
+				<div class="container" id="menuDice"></div>
+				
+				<a href="game.html">
+					<div class="button">Gioca!</div>
+				</a>
+			
+			</div>
+
+			<script>
+				
+				let menuDice = []
+        		for (let i = 0; i < 3; i++) {
+            		let numeroCasuale = Math.floor(Math.random() * 6) + 1;
+            		menuDice.push(numeroCasuale);
+        		}
+
+				menuDice.forEach(function(numero) {
+            		let diceImg = document.createElement('img');
+            		diceImg.classList.add('dice');
+            		diceImg.src = 'img/dice' + numero + '.png';
+            		document.getElementById('menuDice').appendChild(diceImg);
+        		});
+
+			</script>
+		
+		</body>
+	</html>
+	
