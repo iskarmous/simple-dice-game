@@ -56,10 +56,10 @@ function tiraDadi() {
 
     if (puntiCPU == limite) {
         alert("Vince la CPU!");
-        location.href = "home.html";
+        location.href = "index.html";
     }
     if (puntiPlayer == limite) {
         alert("Hai vinto!!");
-        location.href = "home.html";
+        location.href = "index.html";
     }
 }
