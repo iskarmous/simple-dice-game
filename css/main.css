@@ -1,5 +1,6 @@
 body {
 	background-color: black;
+	zoom: 85%;
 }
 
 * {
@@ -7,9 +8,19 @@ body {
 	color: white;
 }
 
+a {
+	display: block;
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 h1 {
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 30px;
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 h2 {
@@ -36,8 +47,8 @@ h5 {
 }
 
 img {
-	width: 150px;
-    height: 150px;
+	width: 100px;
+    height: 100px;
 }
 
 .button {
@@ -50,6 +61,7 @@ img {
 	text-align: center;
 	text-decoration: none;
 	font-size: 16px;
+	width: 150px;
 }
 
 .game_button {
@@ -79,27 +91,17 @@ img {
 	color: black;
 	text-align: center;
 	font-size: x-large;
-	width: 450px;
+	width: 350px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .dice_board {
-	width: 450px;
-	height: 150px;
+	width: 300px;
+	height: 100px;
 	justify-content: center;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.esito {
-	width: 450px;
-	height: 37px;
-	margin-bottom: 50px;
-	text-align: center;
-	font-size: xx-large;
+	margin-top: 35px;
+	margin-bottom: 35px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -111,12 +113,12 @@ img {
 	color: black;
 	text-align: center;
 	font-size: xx-large;
-	width: 450px;
+	width: 325px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .game {
-	margin-top: 10%;
+	margin-top: 70px;
 	justify-content: center;
 }

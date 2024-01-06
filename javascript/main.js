@@ -35,20 +35,12 @@ function tiraDadi() {
         let punteggioPlayer = risultatiPlayer.reduce((accumulator, currentValue) => accumulator + currentValue);
 
         if (punteggioPlayer > punteggioCPU) {
-            esito = "Punto a " + nickname;
             puntiPlayer ++
         }
       
         if (punteggioPlayer < punteggioCPU) {
-            esito = "Punto alla CPU";
             puntiCPU ++
         }
-      
-        if (punteggioPlayer == punteggioCPU) {
-            esito = "Pareggio";
-        }
-
-        document.getElementById("esito").innerHTML = esito;
 
         document.getElementById("pointsCPU").innerHTML = puntiCPU;
         document.getElementById("pointsPlayer").innerHTML = puntiPlayer;
