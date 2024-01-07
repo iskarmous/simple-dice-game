@@ -1,6 +1,7 @@
 body {
-	background-color: black;
+	background-color: #000000;
 	zoom: 85%;
+	justify-content: center;
 }
 
 * {
@@ -37,6 +38,8 @@ h5 {
 .container {
 	justify-content: center;
 	display: flex;
+	width: 300px;
+	height: 100px;
 }
 
 .center {
@@ -69,15 +72,16 @@ img {
 	border-radius: 12px;
 	color: black;
 	font-weight: bold;
-	padding: 15px 32px;
-	margin-top: 30px;
+	padding: 15px 35px;
 	text-align: center;
 	text-decoration: none;
 	font-size: 16px;
-	margin-left: auto;
-	margin-right: auto;
 	cursor: pointer;
-	width: 150px;
+	position: absolute;
+	margin-top: 25px;
+	left: 50%;
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
 }
 
 .button:hover {

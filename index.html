@@ -3,7 +3,7 @@
 		<head>
 			<title>Dice Game!</title>
 			<link rel="stylesheet" href="css/main.css">
-			<link rel="icon" type="image/x-icon" href="img/diceicon.png">
+			<link rel="icon" type="image/x-icon" href="img/icon.png">
 		</head>
 		
 		<body>
@@ -22,18 +22,28 @@
 
 			<script>
 				
-				let menuDice = []
-        		for (let i = 0; i < 3; i++) {
-            		let numeroCasuale = Math.floor(Math.random() * 6) + 1;
-            		menuDice.push(numeroCasuale);
-        		}
+				function diceMenuAnimation() {
+					
+					document.getElementById("menuDice").innerHTML = "";
+					
+					let menuDice = []
+        			for (let i = 0; i < 3; i++) {
+            			let numeroCasuale = Math.floor(Math.random() * 6) + 1;
+            			menuDice.push(numeroCasuale);
+        			}
 
-				menuDice.forEach(function(numero) {
-            		let diceImg = document.createElement('img');
-            		diceImg.classList.add('dice');
-            		diceImg.src = 'img/dice' + numero + '.png';
-            		document.getElementById('menuDice').appendChild(diceImg);
-        		});
+					menuDice.forEach(function(numero) {
+            			let diceImg = document.createElement('img');
+            			diceImg.classList.add('dice');
+            			diceImg.src = 'img/dice' + numero + '.png';
+            			document.getElementById('menuDice').appendChild(diceImg);
+        			});
+				
+				}
+
+				const animation = setInterval(() => {diceMenuAnimation();}, 75);
+				setTimeout(() => clearInterval(animation), 1000);
+				
 
 			</script>
 		
